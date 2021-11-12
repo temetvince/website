@@ -1,0 +1,64 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "private": true,
+  "main": "public/electron.ts",
+  "devDependencies": {
+    "@chakra-ui/icons": "latest",
+    "@chakra-ui/react": "latest",
+    "@chakra-ui/theme-tools": "latest",
+    "@emotion/react": "latest",
+    "@emotion/styled": "latest",
+    "@testing-library/jest-dom": "latest",
+    "@testing-library/react": "latest",
+    "@testing-library/user-event": "latest",
+    "@types/jest": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@types/react-router-dom": "latest",
+    "concurrently": "latest",
+    "cross-env": "latest",
+    "electron": "latest",
+    "electron-is-dev": "latest",
+    "eslint": "latest",
+    "eslint-config-prettier": "latest",
+    "eslint-plugin-react": "latest",
+    "framer-motion": "^4.1.17",
+    "i": "latest",
+    "npm": "latest",
+    "npm-check-updates": "latest",
+    "prettier": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-router-dom": "latest",
+    "react-scripts": "latest",
+    "typescript": "latest",
+    "wait-on": "latest",
+    "web-vitals": "latest"
+  },
+  "scripts": {
+    "start": "npm run typescript && react-scripts start",
+    "build": "npm run typescript && react-scripts build",
+    "test": "npm run typescript && react-scripts test",
+    "eject": "react-scripts eject",
+    "dev": "npm run typescript && concurrently -k \"cross-env BROWSER=none npm start\" \"npm:electron\"",
+    "electron": "npm run typescript && wait-on tcp:3000 && electron .",
+    "typescript": "npm run lint && npm run format && tsc",
+    "lint": "eslint \"src/**/*.{cjs,js,jsx,ts,tsx}\" --quiet --fix",
+    "format": "prettier --write \"src/**/*.{cjs,js,jsx,ts,tsx,json}\" \"src/**/*.{cjs,js,jsx,ts,tsx,json,html,css}\"",
+    "update-dependencies": "ncu -u"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
