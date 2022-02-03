@@ -1,10 +1,8 @@
 import React, { ReactElement } from "react";
-import UrlPage from "../UrlPage";
-
-import "bootstrap/dist/css/bootstrap.min.css";
+import HomePage from "../HomePage";
 
 const App: React.FC = (): ReactElement => {
-   return <UrlPage />;
+   return <HomePage />;
 };
 
 export default App;
