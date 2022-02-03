@@ -20,19 +20,19 @@ const Main = () => {
             </article>
             <article className="links grid primary">
                <a
-                  className="justify-start"
+                  className="justify-start primary"
                   href="https://github.com/temetvince/Resume/blob/master/EmmettCaseyResume.pdf"
                >
                   Emmett&apos;s Resume
                </a>
                <a
-                  className="justify-center"
+                  className="justify-center primary"
                   href="https://github.com/temetvince"
                >
                   GitHub Repos
                </a>
                <a
-                  className="justify-end"
+                  className="justify-end primary"
                   href="https://www.youtube.com/channel/UCw7tARIJee8gd1OpeSjAEMw"
                >
                   YouTube Channel

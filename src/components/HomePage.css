@@ -1,0 +1,34 @@
+@import "/src/Style.css";
+
+:root {
+   --max-width: 1200px;
+   --min-width: 547px;
+}
+
+.homepage-root {
+   display: grid;
+   grid-template-columns: auto;
+   justify-content: center;
+   height: 100vh;
+}
+
+.homepage-grid {
+   display: grid;
+   grid-template-columns: max-content 1fr;
+   column-gap: var(--spacing);
+   padding: var(--spacing);
+   max-width: var(--max-width);
+   min-width: var(--min-width);
+   font-size: 1em;
+   line-height: 1.4;
+}
+
+/*Media Queries*/
+@media (max-width: 750px) {
+   .homepage-grid {
+      display: flex;
+      flex-flow: column-reverse;
+      padding: var(--spacing);
+      gap: var(--spacing);
+   }
+}

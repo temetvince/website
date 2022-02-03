@@ -20,13 +20,13 @@ const content: CSSProperties = {
    height: "fit-content",
 };
 
-const flexContainer: CSSProperties = {
+const gridContainer: CSSProperties = {
    display: "grid",
    gridTemplateRows: "max-content repeat(4, 1fr)",
    rowGap: spacing + px,
 };
 
-const flexItem: CSSProperties = {
+const gridItem: CSSProperties = {
    display: "grid",
    justifyItems: "center",
    alignItems: "center",
@@ -41,8 +41,8 @@ const padding: CSSProperties = {
 
 const Sidebar = () => {
    return (
-      <aside style={{ ...flexContainer }}>
-         <div style={{ ...border, ...padding, ...content, ...flexItem }}>
+      <aside style={{ ...gridContainer }}>
+         <div style={{ ...border, ...padding, ...content, ...gridItem }}>
             <h3>Emmett Casey</h3>
             <img
                src={"profilepic.jpeg"}
@@ -56,7 +56,7 @@ const Sidebar = () => {
          </div>
 
          <Card
-            cssStyle={{ ...border, ...flexItem, ...padding }}
+            cssStyle={{ ...border, ...gridItem, ...padding }}
             mainText={<Text text={"aatotem"} element={TextElements.h3} />}
             subText={
                <Text text={"Miami-Peoria Name"} element={TextElements.div} />
@@ -64,19 +64,19 @@ const Sidebar = () => {
          />
 
          <Card
-            cssStyle={{ ...border, ...flexItem, ...padding }}
+            cssStyle={{ ...border, ...gridItem, ...padding }}
             mainText={<Text text={"temetvince"} element={TextElements.h3} />}
             subText={<Text text={"Online Handle"} element={TextElements.div} />}
          />
 
          <Card
-            cssStyle={{ ...border, ...flexItem, ...padding }}
+            cssStyle={{ ...border, ...gridItem, ...padding }}
             mainText={<Text text={"KI5SPL"} element={TextElements.h3} />}
             subText={<Text text={"Ham Callsign"} element={TextElements.div} />}
          />
 
          <Card
-            cssStyle={{ ...border, ...flexItem, ...padding }}
+            cssStyle={{ ...border, ...gridItem, ...padding }}
             mainText={<Text text={"WROI825"} element={TextElements.h3} />}
             subText={<Text text={"GMRS Callsign"} element={TextElements.div} />}
          />
