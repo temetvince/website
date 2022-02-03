@@ -219,7 +219,6 @@
 * {
    box-sizing: border-box;
    min-width: auto;
-   min-height: min-content;
    margin: 0;
    padding: 0;
 }
