@@ -1,9 +1,9 @@
 # Typescript App
 
-A TS React Electron App.
+My personal website.
 
 ## Instructions
-Start dev Electron with:
+Start with:
 ```bash
-$ npm run dev
+$ npm start
 ```
