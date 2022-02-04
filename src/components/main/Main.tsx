@@ -8,37 +8,41 @@ import Images from "../../Images";
 const Main = () => {
    return (
       <main className="main grid border-secondary">
-         <header className="">
-            <article className="header grid">
-               <h1 className="welcome text-xl justify-start secondary">
-                  Welcome!
-               </h1>
-               <iframe
-                  className="duckduckgo justify-end"
-                  src="https://duckduckgo.com/search.html?width=125&prefill=Duck Duck Go&focus=yes"
-               />
-            </article>
-            <article className="links grid primary">
-               <a
-                  className="justify-start primary"
-                  href="https://github.com/temetvince/Resume/blob/master/EmmettCaseyResume.pdf"
-               >
-                  Emmett&apos;s Resume
-               </a>
-               <a
-                  className="justify-center primary"
-                  href="https://github.com/temetvince"
-               >
-                  GitHub Repos
-               </a>
-               <a
-                  className="justify-end primary"
-                  href="https://www.youtube.com/channel/UCw7tARIJee8gd1OpeSjAEMw"
-               >
-                  YouTube Channel
-               </a>
-            </article>
-         </header>
+         <article className="header grid">
+            <h1 className="welcome text-xl justify-start secondary">
+               Welcome!
+            </h1>
+            <iframe
+               className="duckduckgo justify-end"
+               src="https://duckduckgo.com/search.html?width=125&prefill=Duck Duck Go&focus=yes"
+            />
+         </article>
+         <article className="links grid primary">
+            <a
+               className="justify-start primary"
+               href="https://github.com/temetvince/Resume/blob/master/EmmettCaseyResume.pdf"
+            >
+               Emmett&apos;s
+               <br />
+               Resume
+            </a>
+            <a
+               className="justify-center text-center primary"
+               href="https://github.com/temetvince"
+            >
+               GitHub
+               <br />
+               Repos
+            </a>
+            <a
+               className="justify-end primary"
+               href="https://www.youtube.com/channel/UCw7tARIJee8gd1OpeSjAEMw"
+            >
+               YouTube
+               <br />
+               Channel
+            </a>
+         </article>
          <div className="secondary grid centered text-justify">
             I&apos;m a software engineer with a myriad of hobbies... most
             recently I&apos;ve focused on Ham radio. I live on Grand Lake in
@@ -51,8 +55,8 @@ const Main = () => {
             <Carousel
                data={Images}
                time={4000}
-               width="500px"
-               height="500px"
+               width="100%"
+               height="50vh"
                radius="10px"
                slideNumber={false}
                captionPosition="bottom"

@@ -1,9 +1,11 @@
 .main {
    height: 100%;
+   grid-template-rows: auto auto auto 5fr auto;
 }
 
 .header {
    grid-template-columns: max-content auto;
+   padding-top: 0 !important;
 }
 
 .welcome {

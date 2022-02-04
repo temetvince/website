@@ -15,10 +15,9 @@
 .homepage-grid {
    display: grid;
    grid-template-columns: max-content 1fr;
-   column-gap: var(--spacing);
+   gap: var(--spacing);
    padding: var(--spacing);
    max-width: var(--max-width);
-   min-width: var(--min-width);
    font-size: 1em;
    line-height: 1.4;
 }
@@ -28,7 +27,10 @@
    .homepage-grid {
       display: flex;
       flex-flow: column-reverse;
-      padding: var(--spacing);
-      gap: var(--spacing);
+      gap: 0;
+   }
+
+   .main {
+      margin-bottom: var(--spacing);
    }
 }

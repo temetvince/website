@@ -63,6 +63,18 @@
    box-shadow: var(--box-shadow);
 }
 
+.align-start {
+   align-self: start;
+}
+
+.align-center {
+   align-self: center;
+}
+
+.align-end {
+   align-self: end;
+}
+
 .justify-start {
    justify-self: start;
 }
@@ -82,6 +94,14 @@
 
 .text-justify {
    text-align: justify;
+}
+
+.text-left {
+   text-align: left;
+}
+
+.text-right {
+   text-align: right;
 }
 
 .text-xl {

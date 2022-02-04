@@ -9,7 +9,9 @@ class HomePage extends React.Component {
          <div className="homepage-root">
             <div className="homepage-grid">
                <Sidebar />
-               <Main />
+               <div className="main">
+                  <Main />
+               </div>
             </div>
          </div>
       );
