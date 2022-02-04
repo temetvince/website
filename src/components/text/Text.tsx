@@ -1,4 +1,4 @@
-import React, { CSSProperties, ReactElement } from "react";
+import React, { CSSProperties } from "react";
 
 export enum TextElements {
    h1 = "h1",

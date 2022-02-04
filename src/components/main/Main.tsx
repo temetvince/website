@@ -8,9 +8,9 @@ import Images from "../../Images";
 const Main = () => {
    return (
       <main className="main grid border-secondary">
-            <h1 className="welcome text-xl centered justify-start secondary">
-               Welcome!
-            </h1>
+         <h1 className="welcome text-xl centered justify-start secondary">
+            Welcome!
+         </h1>
          <div className="links grid primary">
             <a
                className="justify-start primary"
