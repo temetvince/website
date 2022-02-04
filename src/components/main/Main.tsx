@@ -8,16 +8,10 @@ import Images from "../../Images";
 const Main = () => {
    return (
       <main className="main grid border-secondary">
-         <article className="header grid">
-            <h1 className="welcome text-xl justify-start secondary">
+            <h1 className="welcome text-xl centered justify-start secondary">
                Welcome!
             </h1>
-            <iframe
-               className="duckduckgo justify-end"
-               src="https://duckduckgo.com/search.html?width=125&prefill=Duck Duck Go&focus=yes"
-            />
-         </article>
-         <article className="links grid primary">
+         <div className="links grid primary">
             <a
                className="justify-start primary"
                href="https://github.com/temetvince/Resume/blob/master/EmmettCaseyResume.pdf"
@@ -42,7 +36,7 @@ const Main = () => {
                <br />
                Channel
             </a>
-         </article>
+         </div>
          <div className="secondary grid centered text-justify">
             I&apos;m a software engineer with a myriad of hobbies... most
             recently I&apos;ve focused on Ham radio. I live on Grand Lake in
