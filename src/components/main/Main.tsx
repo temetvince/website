@@ -48,7 +48,7 @@ const Main = () => {
          <div className="grid centered">
             <Carousel
                data={Images}
-               time={4000}
+               time={8000}
                width="100%"
                height="50vh"
                radius="10px"
